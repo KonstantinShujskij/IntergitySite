@@ -21,13 +21,13 @@ async function start() {
     if(process.env.NODE_ENV !== 'production') { 
         app.use('/', express.static(path.join(__dirname, 'client', 'build')))
         app.get('*', (req, res) => { res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html')) })
-        
+
         return app.listen(PORT, () => console.log(`Dev-App has been started on port ${PORT}`))
     }
 
-    const privateKey = fs.readFileSync('/etc/letsencrypt/live/ncp2p.tech/privkey.pem', 'utf8')
-    const certificate = fs.readFileSync('/etc/letsencrypt/live/ncp2p.tech/cert.pem', 'utf8')
-    const ca = fs.readFileSync('/etc/letsencrypt/live/ncp2p.tech/chain.pem', 'utf8')
+    const privateKey = fs.readFileSync('/etc/letsencrypt/live/integrity.cool/privkey.pem', 'utf8')
+    const certificate = fs.readFileSync('/etc/letsencrypt/live/integrity.cool/cert.pem', 'utf8')
+    const ca = fs.readFileSync('/etc/letsencrypt/live/integrity.cool/chain.pem', 'utf8')
 
     const credentials = { key: privateKey, cert: certificate, ca: ca }
 
