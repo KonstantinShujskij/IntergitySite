@@ -1,0 +1,7 @@
+{
+    "serverUrl": "https://integrity.cool",
+    "baseUrl": "https://integrity.cool",
+    
+    "port": 80,
+    "sslPort": 443
+}

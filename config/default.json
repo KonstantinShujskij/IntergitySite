@@ -1,0 +1,7 @@
+{
+    "serverUrl": "http://localhost:5000",
+    "baseUrl": "http://localhost:3000",
+    
+    "port": 5000,
+    "sslPort": 443
+}
