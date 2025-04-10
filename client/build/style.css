@@ -94,6 +94,14 @@ h5 {
     background-size: cover;
 }
 
+.frame__media img {
+    position: relative;
+    height: calc(var(--index) * var(--side-small));
+    width: calc(var(--index) * var(--size-big));
+    background-position: center;
+    background-size: cover;
+}
+
 .frame__media_left {
     right: calc(var(--size-big) / 2 * var(--index) + var(--gutter));
 }

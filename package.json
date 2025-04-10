@@ -12,11 +12,11 @@
   "dependencies": {
     "config": "^3.3.12",
     "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "fs": "^0.0.1-security",
-    "nodemon": "^3.1.9"
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.9"
   }
 }
