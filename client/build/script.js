@@ -48,16 +48,16 @@ let finish = false
 window.onload = () => {    
     onscroll(0)
 
-    setTimeout(() => { move() }, 4000)
+    // setTimeout(() => { move() }, 4000)
 
     function move() {
         start = true
         frames.forEach((frame) => { frame.classList.add('init') })
 
-        return scroll(2750, 8000, () => { 
+        return scroll(1900, 8000, () => { 
             finish = true 
             
-            setTimeout(() => { window.location.href = "./ua/index.html" }, 100)
+            // setTimeout(() => { window.location.href = "./ua/index.html" }, 1000)
         })
     }
         
